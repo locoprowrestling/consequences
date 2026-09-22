@@ -190,7 +190,7 @@ h1 span {
   background: var(--red);
   color: #fff;
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 0.24em;
+  font-size: 0.28em;
   letter-spacing: 0.06em;
   line-height: 0.8;
   transform: rotate(-4deg);
@@ -203,14 +203,14 @@ h1 span {
   gap: 0.22em;
   width: max-content;
   margin: 0 auto;
-  padding: 0.14em 0.58em 0.12em;
-  border: 0.055em solid rgba(255, 255, 255, 0.75);
+  padding: 0.16em 0.75em 0.14em;
+  border: 0.06em solid rgba(255, 255, 255, 0.85);
   border-radius: 0.09em;
   background: #006b54;
-  box-shadow: 0 0.13em 0 rgba(0, 0, 0, 0.4), 0 0.24em 0.5em rgba(0, 0, 0, 0.38);
+  box-shadow: inset 0 0 0 0.018em rgba(255, 255, 255, 0.18), 0 0.14em 0 rgba(0, 0, 0, 0.45), 0 0.3em 0.62em rgba(0, 0, 0, 0.48);
   color: #fff;
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 0.52em;
+  font-size: 0.68em;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.015em;
@@ -474,13 +474,13 @@ footer p:last-child {
   }
 
   .title-on {
-    font-size: 0.28em;
+    font-size: 0.34em;
     margin-bottom: -0.16em;
   }
 
   .title-street-sign {
-    padding-inline: 0.7em;
-    font-size: 0.68em;
+    padding-inline: 0.82em;
+    font-size: 0.82em;
   }
 
   .status-grid {
