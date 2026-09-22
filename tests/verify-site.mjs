@@ -10,8 +10,12 @@ const cname = (await readFile(path.join(root, 'CNAME'), 'utf8')).trim();
 
 assert.equal(cname, 'consequences.locopro.pw');
 assert.match(html, /Consequences on Coffman Street/);
-assert.match(html, /Date and bell time[\s\S]*To be announced/);
-assert.match(html, /Venue and tickets[\s\S]*To be announced/);
+assert.match(html, /Sunday, January 24, 2027/);
+assert.match(html, /datetime="2027-01-24"/);
+assert.match(html, /Historic Elks Lodge Ballroom/);
+assert.match(html, /Longmont, Colorado/);
+assert.match(html, /Bell time will be announced/);
+assert.match(html, /Ticket information will be announced/);
 assert.doesNotMatch(html, /Last Stand|August 30, 2026|tickets\.locopro\.pw/i);
 
 const localRefs = [...html.matchAll(/(?:href|src)="([^"#][^"]*)"/g)]

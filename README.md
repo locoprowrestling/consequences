@@ -10,10 +10,10 @@ Street**.
 
 ## Current content boundary
 
-Only the event title is confirmed in this first version. The date, venue, bell
-time, card, and ticket URL remain explicitly unannounced. Update the site only
-from confirmed event information. Do not infer details from earlier Coffman
-Street events.
+The event title, Sunday, January 24, 2027 date, and Historic Elks Lodge
+Ballroom venue in Longmont, Colorado are confirmed. Bell time, card, and ticket
+URL remain explicitly unannounced. Update the site only from confirmed event
+information. Do not infer details from earlier Coffman Street events.
 
 ## Local preview
 
