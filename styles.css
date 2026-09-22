@@ -183,9 +183,9 @@ h1 span {
 
 .title-on {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   width: max-content;
-  margin: 0.35em auto -0.27em;
+  margin: 0.32em auto -0.18em;
   padding: 0.1em 0.22em 0.08em;
   background: var(--red);
   color: #fff;
@@ -196,13 +196,33 @@ h1 span {
   transform: rotate(-4deg);
 }
 
-.title-coffman {
-  color: var(--gold);
+.title-street-sign {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.22em;
+  width: max-content;
+  margin: 0 auto;
+  padding: 0.14em 0.58em 0.12em;
+  border: 0.055em solid rgba(255, 255, 255, 0.75);
+  border-radius: 0.09em;
+  background: #006b54;
+  box-shadow: 0 0.13em 0 rgba(0, 0, 0, 0.4), 0 0.24em 0.5em rgba(0, 0, 0, 0.38);
+  color: #fff;
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 0.62em;
-  font-style: italic;
-  letter-spacing: -0.035em;
-  line-height: 0.96;
+  font-size: 0.52em;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  line-height: 0.82;
+  text-shadow: 0 0.025em 0.035em rgba(0, 0, 0, 0.5);
+  transform: rotate(-1deg);
+}
+
+.title-street-sign small {
+  font-size: 0.34em;
+  letter-spacing: 0.08em;
+  line-height: 1;
 }
 
 .hero-line {
@@ -262,30 +282,6 @@ h1 span {
   background: transparent;
   color: var(--gold);
   transform: translateY(-3px);
-}
-
-.street-sign {
-  position: absolute;
-  right: clamp(-2rem, 3vw, 3rem);
-  top: 23%;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.6rem 1.2rem;
-  border: 0.22rem solid rgba(255, 255, 255, 0.65);
-  border-radius: 0.28rem;
-  background: #006b54;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: clamp(1.4rem, 3vw, 2.3rem);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  transform: rotate(6deg);
-}
-
-.street-sign small {
-  font-size: 0.42em;
 }
 
 .ticker {
@@ -477,10 +473,14 @@ footer p:last-child {
     line-height: 0.77;
   }
 
-  .street-sign {
-    top: 18%;
-    right: -2rem;
-    opacity: 0.5;
+  .title-on {
+    font-size: 0.28em;
+    margin-bottom: -0.16em;
+  }
+
+  .title-street-sign {
+    padding-inline: 0.7em;
+    font-size: 0.68em;
   }
 
   .status-grid {

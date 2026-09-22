@@ -16,6 +16,8 @@ assert.match(html, /Historic Elks Lodge Ballroom/);
 assert.match(html, /Longmont, Colorado/);
 assert.match(html, /Bell time will be announced/);
 assert.match(html, /Ticket information will be announced/);
+assert.match(html, /class="title-street-sign"/);
+assert.doesNotMatch(html, /class="street-sign"/);
 assert.doesNotMatch(html, /Last Stand|August 30, 2026|tickets\.locopro\.pw/i);
 
 const localRefs = [...html.matchAll(/(?:href|src)="([^"#][^"]*)"/g)]
