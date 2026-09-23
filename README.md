@@ -28,7 +28,7 @@ Then open `http://localhost:8080/`.
 The transparent event logo is available in two formats:
 
 - `webimages/branding/consequences-on-coffman-st.svg` is the resolution-independent master. All lettering is stored as vector paths, so it has no external font dependency.
-- `webimages/branding/consequences-on-coffman-st.png` is a 3200 × 1600 transparent RGBA render for tools that do not accept SVG.
+- `webimages/branding/consequences-on-coffman-st.png` is a 1600 × 800 transparent RGBA render for tools that do not accept SVG.
 
 ## Verification
 
