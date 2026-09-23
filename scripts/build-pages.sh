@@ -21,6 +21,9 @@ rsync -a --delete \
   --exclude '.github/' \
   --exclude '_site/' \
   --exclude '.playwright-cli/' \
+  --exclude 'output/' \
+  --exclude '*.af' \
+  --exclude '*.af~lock~' \
   --exclude 'scripts/' \
   --exclude 'tests/' \
   --exclude 'prompts/' \

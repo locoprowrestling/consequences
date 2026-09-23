@@ -21,6 +21,19 @@ assert.match(html, /src="webimages\/branding\/consequences-on-coffman-st\.svg"/)
 assert.doesNotMatch(html, /class="street-sign"/);
 assert.doesNotMatch(html, /Last Stand|August 30, 2026|tickets\.locopro\.pw/i);
 
+const carouselOrder = ['Carter Cash', 'Zeak Gallent', 'Nicky Hyde', 'Adam Starling'];
+const slides = [...html.matchAll(/<figure\b[^>]*\bdata-person="([^"]+)"[^>]*>/g)];
+const controls = [...html.matchAll(/<button\b[^>]*\bdata-slide="(\d+)"[^>]*\baria-label="Show ([^"]+)"[^>]*>/g)];
+assert.deepEqual(slides.map((slide) => slide[1]), carouselOrder, 'Hero order must end with Starling');
+assert.deepEqual(controls.map((control) => control[2]), carouselOrder, 'Controls must match the photo order');
+slides.forEach((slide, index) => {
+  assert.ok(slide[0].includes(`aria-label="${index + 1} of 4: ${carouselOrder[index]}"`));
+  assert.ok(slide[0].includes(`aria-hidden="${index === 0 ? 'false' : 'true'}"`));
+  assert.equal(/\bis-active\b/.test(slide[0]), index === 0, 'Only Cash starts active');
+  assert.equal(Number(controls[index][1]), index);
+  assert.ok(controls[index][0].includes(`aria-pressed="${index === 0 ? 'true' : 'false'}"`));
+});
+
 const localRefs = [...html.matchAll(/(?:href|src)="([^"#][^"]*)"/g)]
   .map((match) => match[1])
   .filter((ref) => !/^(?:https?:|data:|mailto:|tel:)/.test(ref));
@@ -31,4 +44,4 @@ for (const ref of localRefs) {
   await access(path.join(root, target), constants.R_OK);
 }
 
-console.log(`Verified title, unknown-field boundaries, CNAME, and ${localRefs.length} local asset references.`);
+console.log(`Verified title, unknown-field boundaries, CNAME, Cash > Gallent > Hyde > Starling carousel order, and ${localRefs.length} local asset references.`);

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//LoCo Pro Wrestling//Consequences//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:consequences-20270124@locopro.pw
+DTSTAMP:20260923T000000Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+SUMMARY:Consequences on Coffman Street
+LOCATION:Historic Elks Lodge Ballroom\, Longmont\, Colorado
+DESCRIPTION:Live LoCo Pro Wrestling. Bell time and tickets to be announced.
+URL:https://consequences.locopro.pw/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
