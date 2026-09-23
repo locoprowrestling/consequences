@@ -161,68 +161,16 @@ a {
   text-transform: uppercase;
 }
 
-h1 {
-  margin: 1.3rem auto 1.1rem;
-  font-family: "Archivo Black", sans-serif;
-  font-size: clamp(3.8rem, 10.2vw, 8.8rem);
-  line-height: 0.72;
-  letter-spacing: -0.075em;
-  text-transform: uppercase;
-  transform: skewY(-2deg);
+.event-logo-heading {
+  width: min(1100px, 100%);
+  margin: 0.25rem auto -1rem;
+  line-height: 0;
 }
 
-h1 span {
+.event-logo {
   display: block;
-}
-
-.title-consequences {
-  position: relative;
-  color: var(--paper);
-  text-shadow: 0.055em 0.045em 0 var(--blue);
-}
-
-.title-on {
-  position: relative;
-  z-index: 3;
-  width: max-content;
-  margin: 0.32em auto -0.18em;
-  padding: 0.1em 0.22em 0.08em;
-  background: var(--red);
-  color: #fff;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 0.28em;
-  letter-spacing: 0.06em;
-  line-height: 0.8;
-  transform: rotate(-4deg);
-}
-
-.title-street-sign {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  gap: 0.22em;
-  width: max-content;
-  margin: 0 auto;
-  padding: 0.16em 0.75em 0.14em;
-  border: 0.06em solid rgba(255, 255, 255, 0.85);
-  border-radius: 0.09em;
-  background: #006b54;
-  box-shadow: inset 0 0 0 0.018em rgba(255, 255, 255, 0.18), 0 0.14em 0 rgba(0, 0, 0, 0.45), 0 0.3em 0.62em rgba(0, 0, 0, 0.48);
-  color: #fff;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 0.68em;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: 0.015em;
-  line-height: 0.82;
-  text-shadow: 0 0.025em 0.035em rgba(0, 0, 0, 0.5);
-  transform: rotate(-1deg);
-}
-
-.title-street-sign small {
-  font-size: 0.34em;
-  letter-spacing: 0.08em;
-  line-height: 1;
+  width: 100%;
+  height: auto;
 }
 
 .hero-line {
@@ -468,19 +416,10 @@ footer p:last-child {
     min-height: 800px;
   }
 
-  h1 {
-    font-size: clamp(2rem, 9.4vw, 4.8rem);
-    line-height: 0.77;
-  }
-
-  .title-on {
-    font-size: 0.34em;
-    margin-bottom: -0.16em;
-  }
-
-  .title-street-sign {
-    padding-inline: 0.82em;
-    font-size: 0.82em;
+  .event-logo-heading {
+    width: min(42rem, 112%);
+    margin-inline: -6%;
+    margin-bottom: -0.25rem;
   }
 
   .status-grid {

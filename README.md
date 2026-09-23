@@ -23,6 +23,13 @@ python3 -m http.server 8080
 
 Then open `http://localhost:8080/`.
 
+## Reusable event logo
+
+The transparent event logo is available in two formats:
+
+- `webimages/branding/consequences-on-coffman-st.svg` is the resolution-independent master. All lettering is stored as vector paths, so it has no external font dependency.
+- `webimages/branding/consequences-on-coffman-st.png` is a 3200 × 1600 transparent RGBA render for tools that do not accept SVG.
+
 ## Verification
 
 ```sh
